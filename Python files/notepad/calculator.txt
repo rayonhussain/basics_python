@@ -1,0 +1,29 @@
+def add(x1,x2):
+	return x1+x2
+def sub(x1,x2):
+	return x1-x2
+def mul(x1,x2):
+	return x1*x2
+def div(x1,x2):
+	return x1/x2
+
+def calculator():
+	print("Enter the two numbers")
+	a=float(input("First number: "))
+	b=float(input("Second number: "))
+	print("Methods Available:")
+	print("1. Addition")
+	print("2. Subraction")
+	print("3. Multiplication")
+	print("4. Division")
+	choose_option=int(input(print("Choose Option: ")))
+	if(choose_option==1):
+		print("Addition of ",a," and ",b, " is " ,add(a,b))
+	elif(choose_option==2):
+		print("Addition of ",a," and ",b, " is " ,sub(a,b))
+	elif(choose_option==3):
+		print("Addition of ",a," and ",b, " is " ,mul(a,b))
+	elif(choose_option==4):
+		print("Addition of ",a," and ",b, " is " ,div(a,b))
+	else:
+		print("Invalid Input")
